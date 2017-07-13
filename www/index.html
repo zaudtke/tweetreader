@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>JJK Recruits</title>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="animate.css"/>
+        <link rel="stylesheet" href="site.css" />
+    </head>
+    <body>
+        <div id="body">
+            <img src="logo.png" class="header-img"/>
+            <section class="content-wrapper clear-fix">
+                <div>
+                <div class="hashtags">
+                        Get in the conversation using <span id="tags"></span>
+                        <div id="getTweets">
+                            <img src="thumbsup.png" style="height:35px;" alt=""/> <span>...Finding more Tweets!</span>
+                        </div>
+                </div>
+                <div id="tweet">
+                    <div class="pull-left media-object">
+                        <img id="profileImage" style="width:64px;height:64px" src="" class="img-thumbnail" />
+                    </div>
+                    <div>
+                        <div class="media-heading">
+                            <span class="name" id="name"></span>
+                            <small>
+                                @<span id="screenName"></span>
+                                <span class="pull-right" id="createdAt"></span>
+                            </small>
+                        </div>
+                        <div class="text">
+                            <span id="text"></span>
+                        </div>
+                        <div style="text-align:center">
+                            <img id="attachment"  src="" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            
+        </div>
+        
+        <script src="app.js"></script>
+        <script>
+            bootstrapApp();
+        </script>
+    </body>
+</html>

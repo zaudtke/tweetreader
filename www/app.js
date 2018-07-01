@@ -16,15 +16,13 @@ function authenticate(){
 }
 
 function getTweets(){
-    document.getElementById("getTweets").style="display:block";
+    
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/api/tweets" + viewModel.refreshUrl);
     xhr.onload = function(){
         var result = JSON.parse(xhr.responseText);
-        
         viewModel.refreshUrl = result.refreshUrl;
         viewModel.tweets.push.apply(viewModel.tweets,result.tweets);
-        document.getElementById("getTweets").style="display:none";
     };
     xhr.send();
 }

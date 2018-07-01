@@ -1,5 +1,5 @@
 html {
-    background-color: #A9A9A9;
+    /*background-color: #A9A9A9;*/
     margin: 0;
     padding: 0;
 }
@@ -46,7 +46,8 @@ nav, section {
 #tweet {
     width: 100%;
     border-radius: 25px;
-    background: #FFF;
+    border: solid #ccc;
+    background:#eee;
     padding: 20px; 
     font-size: 16px;
 }
@@ -78,7 +79,7 @@ nav, section {
 }
 
 #body {
-    background-color: #A9A9A9;
+    /*background-color: #A9A9A9;*/
     clear: both;
     padding-bottom: 35px;
 }
